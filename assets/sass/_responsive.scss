@@ -1,0 +1,54 @@
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    // TESTIMONIAL
+    .testimonial {
+        .carousel {
+            &-inner {
+                img {
+                    height: 150px !important;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    //ABOUT
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    //TESTIMONIAL
+    .testimonial {
+        .carousel {
+            &-inner {
+                
+                img {
+                    height: 220px !important;
+                    border-radius: 100%;
+                }
+                .caption {
+                    padding-bottom: 30px!important;
+                }
+            }
+        }
+    }
+    
+    // CONTACT
+    
+    .contact__inner {
+        padding: 0 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr!important;
+        grid-column-gap: 50px;
+        
+        &--map > div {
+            @include hover-shadow;
+        }
+    }
+}

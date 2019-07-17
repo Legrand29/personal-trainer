@@ -1,0 +1,248 @@
+.section {
+  margin-top: 110px;
+  margin-bottom: 80px; }
+
+@media (min-width: 768px) {
+  .testimonial .carousel-inner img {
+    height: 150px !important;
+    border-radius: 100%; } }
+@media (min-width: 992px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important; }
+
+  .testimonial .carousel-inner img {
+    height: 220px !important;
+    border-radius: 100%; }
+  .testimonial .carousel-inner .caption {
+    padding-bottom: 30px !important; }
+
+  .contact__inner {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    grid-column-gap: 50px; }
+    .contact__inner--map > div {
+      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); } }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
+
+.intro {
+  background: url(../images/action-fitness.jpg) no-repeat top center/cover;
+  height: 90vh; }
+  .intro__inner {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f5f5f5;
+    letter-spacing: 1.5px; }
+    .intro__inner .title {
+      text-transform: uppercase;
+      font-size: 28px; }
+    .intro__inner h4 {
+      padding: 30px 0;
+      text-transform: capitalize; }
+    .intro__inner .button {
+      position: absolute;
+      bottom: 20%; }
+      .intro__inner .button .btn {
+        padding: 5px 40px;
+        text-transform: uppercase;
+        border-radius: 15px;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); }
+      .intro__inner .button .btn1 {
+        background-color: cornflowerblue;
+        transition: all .3s ease-in;
+        margin-right: 20px; }
+        .intro__inner .button .btn1:hover {
+          background-color: #000; }
+          .intro__inner .button .btn1:hover a {
+            color: cornflowerblue; }
+        .intro__inner .button .btn1 a {
+          color: #f5f5f5; }
+      .intro__inner .button .btn2 {
+        background-color: #000;
+        transition: all .3s ease-in; }
+        .intro__inner .button .btn2:hover {
+          background-color: cornflowerblue; }
+          .intro__inner .button .btn2:hover a {
+            color: #000; }
+        .intro__inner .button .btn2 a {
+          color: cornflowerblue; }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr)); }
+  .about__pic {
+    margin-bottom: 50px; }
+    .about__pic img {
+      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); }
+  .about__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto; }
+    .about__info h3 {
+      color: cornflowerblue; }
+  .about__video video {
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); }
+
+.class {
+  background: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #f5f5f5; }
+  .class__inner {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%; }
+    .class__inner h5 {
+      color: cornflowerblue; }
+    .class__inner--1 {
+      margin-bottom: 40px;
+      position: relative; }
+      .class__inner--1 img {
+        border-radius: 10px;
+        height: 250px;
+        position: relative; }
+      .class__inner--1 .caption {
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        transition: all .3s ease-in;
+        opacity: 0;
+        transform: translateY(-50px); }
+        .class__inner--1 .caption:hover {
+          opacity: 1;
+          transform: translateY(0px); }
+        .class__inner--1 .caption span {
+          font-size: 34px;
+          color: cornflowerblue; }
+        .class__inner--1 .caption h2 {
+          color: cornflowerblue; }
+
+.service nav .nav-tabs {
+  border-bottom-color: cornflowerblue; }
+  .service nav .nav-tabs a {
+    color: cornflowerblue; }
+  .service nav .nav-tabs .active {
+    background-color: cornflowerblue;
+    transition: all .3s ease-in;
+    color: #f5f5f5; }
+.service .tab-content .tab-pane img {
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4); }
+.service .tab-content .tab-pane .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .service .tab-content .tab-pane .info h4 {
+    color: cornflowerblue;
+    text-transform: uppercase; }
+
+.testimonial {
+  background: url(../images/bg.jpg) no-repeat top center/cover;
+  background-attachment: fixed; }
+  .testimonial h3 {
+    color: #f5f5f5; }
+  .testimonial .carousel-inner img {
+    width: 50px;
+    height: 100px;
+    border-radius: 100%; }
+  .testimonial .carousel-inner p i {
+    font-size: 26px; }
+
+.contact {
+  padding: 0 40px; }
+  .contact h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: cornflowerblue;
+    border-bottom: 15px; }
+  .contact__inner--info form .form-group input,
+  .contact__inner--info form .form-group select,
+  .contact__inner--info form .form-group textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-color: #000;
+    background: transparent; }
+    .contact__inner--info form .form-group input:focus,
+    .contact__inner--info form .form-group select:focus,
+    .contact__inner--info form .form-group textarea:focus {
+      color: cornflowerblue !important; }
+    .contact__inner--info form .form-group input::placeholder,
+    .contact__inner--info form .form-group select::placeholder,
+    .contact__inner--info form .form-group textarea::placeholder {
+      color: cornflowerblue; }
+  .contact__inner--info form button {
+    padding: 5px 50px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase; }
+
+.footer {
+  background: #000;
+  padding-top: 50px;
+  text-align: center; }
+  .footer__info h3 {
+    text-transform: uppercase;
+    color: cornflowerblue; }
+  .footer__info ul {
+    list-style-type: none; }
+    .footer__info ul li {
+      padding: 10px; }
+      .footer__info ul li a {
+        color: #f5f5f5;
+        text-decoration: underline; }
+  .footer__address {
+    color: #f5f5f5; }
+    .footer__address h3 {
+      text-transform: uppercase;
+      color: cornflowerblue; }
+  .footer__booking {
+    color: #f5f5f5; }
+    .footer__booking h3 {
+      text-transform: uppercase;
+      color: cornflowerblue; }
+  .footer__design {
+    border-top: 1px solid cornflowerblue;
+    padding: 20px 0; }
+    .footer__design h4 {
+      color: rgba(255, 255, 255, 0.5); }
+    .footer__design em {
+      color: cornflowerblue; }
